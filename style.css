@@ -1,0 +1,52 @@
+body {
+    background-color: #262626;
+    color: #dedede;
+    font-size: 28px;
+}
+
+.topnav {
+    background-color: #131313;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 110%;
+}
+
+.topnav a {
+    float: left;
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 28px;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #90d3f6;
+}
+
+button {
+    background-color: #727272;
+    border-radius: 8px;
+    border: none;
+    color: #e5e5e5;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+canvas {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
