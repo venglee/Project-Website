@@ -2,6 +2,8 @@ body {
     background-color: #262626;
     color: #dedede;
     font-size: 28px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .topnav {
@@ -10,7 +12,7 @@ body {
     position: relative;
     top: -10px;
     left: -10px;
-    width: 110%;
+    width: 100%;
 }
 
 .topnav a {
@@ -28,10 +30,10 @@ body {
 }
 
 button {
-    background-color: #727272;
+    background-color: #e5e5e5;
     border-radius: 8px;
     border: none;
-    color: #e5e5e5;
+    color: #0c0c0c;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -41,6 +43,8 @@ button {
     left: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow: 0 10px #999;
 }
 
 canvas {
@@ -49,4 +53,73 @@ canvas {
     left: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+[blur-background] {
+    background-color: #000000;
+    opacity: 0.8;
+    min-width: 100vw;
+    min-height: 101vh;
+    position: absolute;
+    top: -10px;
+}
+
+[prompt-box] {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    box-shadow: 5px 5px #999;
+}
+
+[white-side] {
+    top: 10%;
+    left: 30%;
+}
+
+[black-side] {
+    top: 10%;
+    left: 70%
+}
+
+h {
+    width: 400px;
+    color: #252525;
+    position: relative;
+    left: 25%;
+}
+
+[create-match] {
+    background-color: #4ee051;
+    top: 50%;
+}
+
+[cancel-match] {
+    background-color: #f5302f;
+    top: 75%;
+}
+
+button:active {
+    background-color: #cccccc;
+    box-shadow: 0 5px #666;
+    transform: translate(-50%, 5px);
+}
+
+[selected-side] {
+    background-color: #cccccc;
+    box-shadow: 0 5px #666;
+    transform: translate(-50%, 5px);
+}
+
+[create-match]:active {
+    background-color: #3ec03c;
+}
+
+[cancel-match]:active {
+    background-color: #b31616;
 }

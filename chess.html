@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Venglee's Website</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="chess_buttons.js" defer></script>
         <script src="chess_graphics.js" defer></script>
     </head>
     <body>
@@ -12,7 +13,19 @@
             <a href="/">Home</a>
             <a href="chess">Chess</a>
         </div>
-        <button type="button">Create Match</button>
+        <button type="button" onclick="createMatch()">Create Match</button>
         <canvas id="Canvas" width="500px" height="500px" style="border:2px solid#000000;"></canvas>
+        <div id="background" blur-background hidden></div>
+        <div id="prompt" prompt-box hidden>
+            <h>Choose a side</h>
+            <button white-side id="white" onclick="side('white','black')">
+                <img src="images/pieces/white_king.png" width="62px" height="62px">
+            </button>
+            <button black-side id="black" onclick="side('black','white')">
+                <img src="images/pieces/black_king.png" width="62px" height="62px">
+            </button>
+            <button create-match>Create</button>
+            <button cancel-match onclick="cancelMatch()">Cancel</button>
+        </div>
     </body>
 </html>
